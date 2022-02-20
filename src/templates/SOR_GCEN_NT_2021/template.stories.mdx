@@ -1,0 +1,22 @@
+import { Meta, Preview, Props, Description, Story } from "@storybook/addon-docs/blocks";
+import { object } from "@storybook/addon-knobs";
+import { GCENT2021Template } from "./template";
+import { gcent2021TemplateCertificate } from "./gcent_2021_json";
+
+<Meta title="MDX2|GCENT2021Template" component={GCENT2021Template} />
+
+# GCENT2021Template component
+
+<Description of={GCENT2021Template} />
+
+# Props
+
+<Props of={GCENT2021Template} />
+
+# Usage
+
+<Preview>
+  <Story name="basic sample">
+    <GCENT2021Template document={object("document", gcent2021TemplateCertificate)} />
+  </Story>
+</Preview>

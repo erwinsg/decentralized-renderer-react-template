@@ -1,0 +1,22 @@
+import { Meta, Preview, Props, Description, Story } from "@storybook/addon-docs/blocks";
+import { object } from "@storybook/addon-knobs";
+import { GCEA32021Template } from "./template";
+import { gcea32021TemplateCertificate } from "./gcea3_2021_json";
+
+<Meta title="MDX2|GCEA32021Template" component={GCEA32021Template} />
+
+# GCEA32021Template component
+
+<Description of={GCEA32021Template} />
+
+# Props
+
+<Props of={GCEA32021Template} />
+
+# Usage
+
+<Preview>
+  <Story name="basic sample">
+    <GCEA32021Template document={object("document", gcea32021TemplateCertificate)} />
+  </Story>
+</Preview>

@@ -1,0 +1,22 @@
+import { Meta, Preview, Props, Description, Story } from "@storybook/addon-docs/blocks";
+import { object } from "@storybook/addon-knobs";
+import { GCENA2021Template } from "./template";
+import { gcena2021TemplateCertificate } from "./gcena_2021_json";
+
+<Meta title="MDX2|GCENA2021Template" component={GCENA2021Template} />
+
+# GCENA2021Template component
+
+<Description of={GCENA2021Template} />
+
+# Props
+
+<Props of={GCENA2021Template} />
+
+# Usage
+
+<Preview>
+  <Story name="basic sample">
+    <GCENA2021Template document={object("document", gcena2021TemplateCertificate)} />
+  </Story>
+</Preview>

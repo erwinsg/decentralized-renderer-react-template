@@ -1,0 +1,22 @@
+import { Meta, Preview, Props, Description, Story } from "@storybook/addon-docs/blocks";
+import { object } from "@storybook/addon-knobs";
+import { PSLE2021Template } from "./template";
+import { psle2021TemplateCertificate } from "./psle_2021_json";
+
+<Meta title="MDX2|PSLE2021Template" component={PSLE2021Template} />
+
+# PSLE2021Template component
+
+<Description of={PSLE2021Template} />
+
+# Props
+
+<Props of={PSLE2021Template} />
+
+# Usage
+
+<Preview>
+  <Story name="basic sample">
+    <PSLE2021Template document={object("document", psle2021TemplateCertificate)} />
+  </Story>
+</Preview>
