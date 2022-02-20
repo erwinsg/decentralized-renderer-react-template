@@ -1,10 +1,49 @@
 import { v2 } from "@govtechsg/open-attestation";
 
 export interface GCEA32021TemplateCertificate extends v2.OpenAttestationDocument {
-  name: string;
-  recipient: {
+  attainmentDate: string;
+    transcript: [
+      {
+        level: string;
+        paperGrade: string;
+        subTranscript: string;
+        grade: string;
+        name: string;
+        examiningAuthority: string;
+      },
+      {
+        level: string;
+        grade: string;
+        name: string;
+        examiningAuthority: string;
+      },
+      {
+        level: string;
+        grade: string;
+        name: string;
+        examiningAuthority: string;
+      }
+    ],
     name: string;
-  };
+    recipient: {
+      name: string;
+      nric: string;
+    },
+    id: string;
+    additionalData: {
+      certifierSignature: string;
+      indexNo: string;
+      certifierDesignation: string;
+      schoolName: string;
+      certifierName: string;
+    },
+    issuers: [
+      {
+        name: string;
+        certificateStore: string;
+      }
+    ],
+    issuedOn: string;
 }
 
 export const gcea32021TemplateCertificate: GCEA32021TemplateCertificate = {
@@ -32,11 +71,6 @@ export const gcea32021TemplateCertificate: GCEA32021TemplateCertificate = {
       }
     ],
     $template: "sg/gov/seab/SOR_GCEA_2006_NewSyll",
-    qualificationLevel: [
-      {
-        description: "SINGAPORE-CAMBRIDGE GENERAL CERTIFICATE OF EDUCATION ADVANCED LEVEL"
-      }
-    ],
     name: "SINGAPORE-CAMBRIDGE GENERAL CERTIFICATE OF EDUCATION ADVANCED LEVEL",
     recipient: {
       name: "NAME OF S9773947A",
@@ -54,11 +88,6 @@ export const gcea32021TemplateCertificate: GCEA32021TemplateCertificate = {
       {
         name: "Singapore Examinations and Assessment Board",
         certificateStore: "0xeDe1B6Fc03f1a9C6905C93a2fceb06E19624a55E"
-      }
-    ],
-    fieldOfStudy: [
-      {
-        description: "Basic Programmes and Qualifications"
       }
     ],
     issuedOn: "2019-05-09T09:32:22+08:00"

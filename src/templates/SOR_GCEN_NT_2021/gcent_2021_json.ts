@@ -1,10 +1,36 @@
 import { v2 } from "@govtechsg/open-attestation";
 
 export interface GCENT2021TemplateCertificate extends v2.OpenAttestationDocument {
-  name: string;
-  recipient: {
+	attainmentDate: string;
+    transcript: [
+	  {
+        grade: string;
+        level: string;
+        name: string;
+        languageMedium: string;
+        examiningAuthority: string;
+      }
+    ],
     name: string;
-  };
+    recipient: {
+      name: string;
+      nric: string;
+    },
+    id: string;
+    additionalData: {
+      certifierSignature: string;
+      indexNo: string;
+      certifierDesignation: string;
+      schoolName: string;
+      certifierName: string;
+    },
+    issuers: [
+      {
+        name: string;
+        certificateStore: string;
+      }
+    ],
+    issuedOn: string;
 }
 
 export const gcent2021TemplateCertificate: GCENT2021TemplateCertificate = {
@@ -19,11 +45,6 @@ export const gcent2021TemplateCertificate: GCENT2021TemplateCertificate = {
       }
     ],
     $template: "sg/gov/seab/SOR_GCEN_NT_2021",
-    qualificationLevel: [
-      {
-        description: "SINGAPORE-CAMBRIDGE GENERAL CERTIFICATE OF EDUCATION NORMAL (TECHINICAL) [N(T)] LEVEL"
-      }
-    ],
     name: "SINGAPORE-CAMBRIDGE GENERAL CERTIFICATE OF EDUCATION NORMAL (TECHINICAL) [N(T)] LEVEL",
     recipient: {
       name: "NAME OF S9818814B",
@@ -41,11 +62,6 @@ export const gcent2021TemplateCertificate: GCENT2021TemplateCertificate = {
       {
         name: "Singapore Examinations and Assessment Board",
         certificateStore: "0xeDe1B6Fc03f1a9C6905C93a2fceb06E19624a55E"
-      }
-    ],
-    fieldOfStudy: [
-      {
-        description: "Basic Programmes and Qualifications"
       }
     ],
     issuedOn: "2021-02-27T15:47:36+08:00"
