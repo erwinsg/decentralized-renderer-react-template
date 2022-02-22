@@ -31,22 +31,6 @@ import {
   SOR_MERIT_MARGIN
 } from "./style";
 
-import { RENDEREXPLANATORYNOTES_NA } from "./explnotes_na_detail";
-
-import { RENDEREXPLANATORYNOTES_O } from "./explnotes_o_detail";
-
-import { RENDEREXPLANATORYNOTES_NT } from "./explnotes_nt_detail";
-
-import { RENDEREXPLANATORYNOTES_N } from "./explnotes_n_detail";
-
-import { RENDEREXPLANATORYNOTES_A } from "./explnotes_a_detail";
-
-import { RENDEREXPLANATORYNOTES_A2 } from "./explnotes_a2_detail";
-
-import { RENDEREXPLANATORYNOTES_A3 } from "./explnotes_a3_detail";
-
-import { RENDEREXPLANATORYNOTES_PSLE } from "./explnotes_psle_detail";
-
 import { RENDEREXPLANATORYNOTES_PSLE_2021 } from "./explnotes_psle_2021_detail";
 
 import { RENDEREXPLANATORYNOTES_O_2021 } from "./explnotes_o_2021_detail";
@@ -144,26 +128,10 @@ export const GETESORBGCOLOR = examlvl => {
 
 export const GETEXPLANATORYNOTES = examlvl => {
   let explanatorynotes = "";
-  if (examlvl === "GCENNA") {
-    explanatorynotes = RENDEREXPLANATORYNOTES_NA();
-  } else if (examlvl === "GCEO") {
-    explanatorynotes = RENDEREXPLANATORYNOTES_O();
-  } else if (examlvl === "GCENNT") {
-    explanatorynotes = RENDEREXPLANATORYNOTES_NT();
-  } else if (examlvl === "GCEN") {
-    explanatorynotes = RENDEREXPLANATORYNOTES_N();
-  } else if (examlvl === "GCEA") {
-    explanatorynotes = RENDEREXPLANATORYNOTES_A();
-  } else if (examlvl === "GCEA2") {
-    explanatorynotes = RENDEREXPLANATORYNOTES_A2();
-  } else if (examlvl === "GCEA2_2021") {
+  if (examlvl === "GCEA2_2021") {
     explanatorynotes = RENDEREXPLANATORYNOTES_A2_2021();
-  } else if (examlvl === "GCEA3") {
-    explanatorynotes = RENDEREXPLANATORYNOTES_A3();
   } else if (examlvl === "GCEA3_2021") {
     explanatorynotes = RENDEREXPLANATORYNOTES_A3_2021();
-  } else if (examlvl === "PSLE") {
-    explanatorynotes = RENDEREXPLANATORYNOTES_PSLE();
   } else if (examlvl === "GCEO_2021") {
     explanatorynotes = RENDEREXPLANATORYNOTES_O_2021();
   } else if (examlvl === "GCENNA_2021") {

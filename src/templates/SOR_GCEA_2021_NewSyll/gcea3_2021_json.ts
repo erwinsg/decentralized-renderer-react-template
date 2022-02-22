@@ -66,7 +66,7 @@ export const gcea32021TemplateCertificate: GCEA32021TemplateCertificate = {
       {
         level: "H2",
         grade: "A",
-        name: "MALAY LANGUAGE & LITERATURE",
+        name: "MALAY LANGUAGE AND LITERATURE",
         examiningAuthority: "SINGAPORE"
       }
     ],

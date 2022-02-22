@@ -1,17 +1,15 @@
-import { SEABSOR } from "./sor";
-import { EXPLANATORYNOTES } from "../common/explnotes_a3_2021";
+import { GCEA32021SOR } from "./sor";
+import { GCEA32021TemplateExplanatoryNotes } from "../common/explnotes_a3_2021";
 
 export const templates = [
   {
     id: "sor",
     label: "Statement of Results",
-    template: SEABSOR
+    template: GCEA32021SOR
   },  
   {
     id: "explanatorydtl",
     label: "Explanatory Notes",
-    template: EXPLANATORYNOTES
+    template: GCEA32021TemplateExplanatoryNotes
   }
 ];
-
-export default templates;

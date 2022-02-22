@@ -1,17 +1,15 @@
-import { SEABSOR } from "./sor";
-import { EXPLANATORYNOTES } from "../common/explnotes_psle_2021";
+import { PSLE2021SOR } from "./sor";
+import { PSLE2021TemplateExplanatoryNotes } from "../common/explnotes_psle_2021";
 
 export const templates = [
   {
     id: "sor",
     label: "Statement of Results",
-    template: SEABSOR
+    template: PSLE2021SOR
   },  
   {
     id: "explanatorydtl",
     label: "Explanatory Notes",
-    template: EXPLANATORYNOTES
+    template: PSLE2021TemplateExplanatoryNotes
   }
 ];
-
-export default templates;
