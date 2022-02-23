@@ -3,18 +3,7 @@ import { TEMPLATE_EXPLANATORYNOTES } from "../common/template";
 
 import React, { FunctionComponent } from "react";
 import { TemplateProps } from "@govtechsg/decentralized-renderer-react-components";
-import { css } from "@emotion/core";
 import { PSLE2021TemplateCertificate } from "./psle_2021_json";
-
-const containerStyle = css`
-  background-color: #324353;
-  color: #ffffff;
-  padding: 15px;
-  margin: auto;
-  width: 80%;
-  text-align: center;
-`;
-
 
 export const PSLE2021Template: FunctionComponent<TemplateProps<PSLE2021TemplateCertificate>> = ({ document }) => {
   return (

@@ -3,18 +3,7 @@ import { TEMPLATE_EXPLANATORYNOTES } from "../common/template";
 
 import React, { FunctionComponent } from "react";
 import { TemplateProps } from "@govtechsg/decentralized-renderer-react-components";
-import { css } from "@emotion/core";
 import { GCEO2021TemplateCertificate } from "./gceo_2021_json";
-
-const containerStyle = css`
-  background-color: #324353;
-  color: #ffffff;
-  padding: 15px;
-  margin: auto;
-  width: 80%;
-  text-align: center;
-`;
-
 
 export const GCEO2021Template: FunctionComponent<TemplateProps<GCEO2021TemplateCertificate>> = ({ document }) => {
   return (

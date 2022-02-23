@@ -30,8 +30,8 @@ import { TemplateRegistry } from "@govtechsg/decentralized-renderer-react-compon
 export const registry: TemplateRegistry<any> = {
   default: TemplatePSLE,
   SOR_PSLE_2021: TemplatePSLE,
-  SOR_GCEA_2021_NewSyll: TemplateGCEA3,
-  SOR_GCEA_2021_OldSyll: TemplateGCEA2,
+  SOR_GCEA_A3_2021: TemplateGCEA3,
+  SOR_GCEA_A2_2021: TemplateGCEA2,
   SOR_GCEN_NA_2021: TemplateGCENA,
   SOR_GCEN_NT_2021: TemplateGCENT,
   SOR_GCEO_2021: TemplateGCEO
