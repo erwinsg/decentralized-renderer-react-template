@@ -3,8 +3,8 @@ import { TemplateProps } from "@govtechsg/decentralized-renderer-react-component
 
 import { TEMPLATE_EXPLANATORYNOTES } from "./template";
 
-//export const PSLE2021TemplateExplanatoryNotes: FunctionComponent<TemplateProps> = ({ document }) => {
-export const PSLE2021TemplateExplanatoryNotes = () => {	
+export const PSLE2021TemplateExplanatoryNotes: FunctionComponent<TemplateProps> = () => {
+//export const PSLE2021TemplateExplanatoryNotes = () => {	
 	return(
 		<span>{TEMPLATE_EXPLANATORYNOTES("PSLE_2021")}</span>
 	);

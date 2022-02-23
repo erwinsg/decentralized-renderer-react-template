@@ -1,5 +1,5 @@
-import React, { FunctionComponent } from "react";
-import { TemplateProps } from "@govtechsg/decentralized-renderer-react-components";
+//import React, { FunctionComponent } from "react";
+//import { TemplateProps } from "@govtechsg/decentralized-renderer-react-components";
 
 import { EXPLANATORY_FONT_SIZE_13, EXPLANATORY_CONTENT } from "./style";
 

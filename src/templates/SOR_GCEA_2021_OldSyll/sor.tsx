@@ -3,10 +3,10 @@ import { TemplateProps } from "@govtechsg/decentralized-renderer-react-component
 
 import { TEMPLATE_ESOR } from "../common/template";
 
-//export const  Template: FunctionComponent<TemplateProps> = ({ document }) => {
-export const GCENNA2021SOR = certificate => {
+export const GCEA22021SOR: FunctionComponent<TemplateProps> = ({ document }) => {
+//export const GCEA22021SOR = certificate => {
 	return(
-		<span>{TEMPLATE_ESOR(certificate, "GCEN", "NT")}</span>
+		<span>{TEMPLATE_ESOR(document, "GCEA", "A2")}</span>
 	);
 };
 

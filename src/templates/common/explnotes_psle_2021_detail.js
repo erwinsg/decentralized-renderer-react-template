@@ -1,6 +1,5 @@
-import React, { FunctionComponent } from "react";
-import { TemplateProps } from "@govtechsg/decentralized-renderer-react-components";
-import { CustomTemplateCertificate } from "../samples";
+//import React, { FunctionComponent } from "react";
+//import { TemplateProps } from "@govtechsg/decentralized-renderer-react-components";
 
 import {
   EXPLANATORY_SUB_TITLE,

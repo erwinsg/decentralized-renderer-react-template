@@ -1,5 +1,5 @@
-import React, { FunctionComponent } from "react";
-import { TemplateProps } from "@govtechsg/decentralized-renderer-react-components";
+//import React, { FunctionComponent } from "react";
+//import { TemplateProps } from "@govtechsg/decentralized-renderer-react-components";
 import { css } from "@emotion/core";
 import SEAB_LOGO from "./SEAB_logo.png";
 

@@ -5,20 +5,20 @@ export interface GCEA32021TemplateCertificate extends v2.OpenAttestationDocument
     transcript: [
       {
         level: string;
+        grade: string;
+        name: string;
+        examiningAuthority: string;
+      },
+      {
+        level: string;
+        grade: string;
+        name: string;
+        examiningAuthority: string;
+      },
+	  {
+        level: string;
         paperGrade: string;
         subTranscript: string;
-        grade: string;
-        name: string;
-        examiningAuthority: string;
-      },
-      {
-        level: string;
-        grade: string;
-        name: string;
-        examiningAuthority: string;
-      },
-      {
-        level: string;
         grade: string;
         name: string;
         examiningAuthority: string;
@@ -51,14 +51,6 @@ export const gcea32021TemplateCertificate: GCEA32021TemplateCertificate = {
     transcript: [
       {
         level: "H1",
-        paperGrade: "PASS",
-        subTranscript: "ORAL/AURAL",
-        grade: "D",
-        name: "MALAY LANGUAGE",
-        examiningAuthority: "SINGAPORE"
-      },
-      {
-        level: "H1",
         grade: "B",
         name: "GENERAL PAPER",
         examiningAuthority: "CAMBRIDGE"
@@ -67,6 +59,14 @@ export const gcea32021TemplateCertificate: GCEA32021TemplateCertificate = {
         level: "H2",
         grade: "A",
         name: "MALAY LANGUAGE AND LITERATURE",
+        examiningAuthority: "SINGAPORE"
+      },
+	  {
+        level: "H1",
+        paperGrade: "PASS",
+        subTranscript: "ORAL/AURAL",
+        grade: "D",
+        name: "MALAY LANGUAGE",
         examiningAuthority: "SINGAPORE"
       }
     ],

@@ -3,8 +3,8 @@ import { TemplateProps } from "@govtechsg/decentralized-renderer-react-component
 
 import { TEMPLATE_EXPLANATORYNOTES } from "./template";
 
-//export const GCENNA2021TemplateExplanatoryNotes: FunctionComponent<TemplateProps> = ({ document }) => {
-export const GCENNA2021TemplateExplanatoryNotes = () => {
+export const GCENNA2021TemplateExplanatoryNotes: FunctionComponent<TemplateProps> = () => {
+//export const GCENNA2021TemplateExplanatoryNotes = () => {
 	return(
 		<span>{TEMPLATE_EXPLANATORYNOTES("GCENNA_2021")}</span>
 	);
